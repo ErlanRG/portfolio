@@ -1,0 +1,59 @@
+"use client"
+
+import React from "react";
+
+const smoothScroll = (event) => {
+  event.preventDefault();
+  const targetId = event.currentTarget.getAttribute('href');
+  const targetSection = document.querySelector(targetId);
+
+  if (targetSection) {
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+const Navbar = () => {
+  return (
+    <nav className="navbar navbar-expand-lg bg-cat-base fixed-top border-body" data-bs-theme="dark">
+      <div className="container">
+        {/* Logo */}
+        <a className="navbar-brand fs-4" href="#home" onClick={smoothScroll}>Erlan Rangel Garro</a>
+
+        {/* Toggle btn */}
+        <button className="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* SideBar */}
+        <div className="sidebar offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div className="offcanvas-header text-cat-text border-bottom border-white">
+            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Portfolio</h5>
+            <button type="button" className="btn-close btn-close-cat-text shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          {/* SideBar Body */}
+          <div className="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+            <ul className="nav navbar-nav nav-underline justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li className="nav-item mx-2">
+                <a className="nav-link" aria-current="page" href="#home" onClick={smoothScroll}>Home</a>
+              </li>
+              <li className="nav-item mx-2">
+                <a className="nav-link" href="#projects" onClick={smoothScroll}>Projects</a>
+              </li>
+              <li className="nav-item mx-2">
+                <a className="nav-link" href="#about" onClick={smoothScroll}>About me</a>
+              </li>
+            </ul>
+
+            {/* Contact */}
+            <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+              <a className="text-decoration-none text-xl px-3 py-1 bg-cat-red rounded-3 text-cat-base" href="#contact" onClick={smoothScroll}>Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
