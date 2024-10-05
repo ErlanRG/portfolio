@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image";
+import NavLink from "./NavLink";
 
 const smoothScroll = (event) => {
   event.preventDefault();
@@ -41,15 +42,9 @@ const Navbar = () => {
           {/* SideBar Body */}
           <div className="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
             <ul className="nav navbar-nav nav-underline justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
-              <li className="nav-item mx-2">
-                <a className="nav-link" aria-current="page" href="#home" onClick={smoothScroll}>Home</a>
-              </li>
-              <li className="nav-item mx-2">
-                <a className="nav-link" href="#projects" onClick={smoothScroll}>Projects</a>
-              </li>
-              <li className="nav-item mx-2">
-                <a className="nav-link" href="#about" onClick={smoothScroll}>About me</a>
-              </li>
+              <NavLink onClick={smoothScroll} href="#home">Home</NavLink>
+              <NavLink onClick={smoothScroll} href="#projects">Projects</NavLink>
+              <NavLink onClick={smoothScroll} href="#about">About me</NavLink>
             </ul>
 
             {/* Contact */}
