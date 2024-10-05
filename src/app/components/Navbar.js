@@ -1,6 +1,6 @@
 "use client"
 
-import React from "react";
+import Image from "next/image";
 
 const smoothScroll = (event) => {
   event.preventDefault();
@@ -17,7 +17,14 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-cat-base fixed-top border-body" data-bs-theme="dark">
       <div className="container">
         {/* Logo */}
-        <a className="navbar-brand fs-4" href="#home" onClick={smoothScroll}>Erlan Rangel Garro</a>
+        <a className="navbar-brand fs-4" href="#home" onClick={smoothScroll}>
+          <Image
+            src="/icons/logoerlanrangel.webp"
+            alt="logo"
+            width={75}
+            height={75}
+          />
+        </a>
 
         {/* Toggle btn */}
         <button className="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
