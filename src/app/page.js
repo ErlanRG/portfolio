@@ -1,19 +1,20 @@
-import ProjectList from './components/ProjectList';
 import HighText from './components/HighlightedText';
 import Image from 'next/image';
-import Section from './components/Section';
+import ProjectList from './components/ProjectList';
 import SocialList from './components/SocialList';
+import Section from './components/Section';
+import Title from './components/Title';
 
 export default function Home() {
   return (
-    <div>
-      <div className="pt-16 overflow-y-scroll h-screen snap-y snap-mandatory">
+    <div className="flex flex-col">
+      <div className="pt-16 flex-grow snap-y snap-mandatory">
         {/* Home info */}
-        <Section id="home" bgColor="bg-cat-base">
-          <div id="home_info" className="container flex flex-wrap justify-around items-center gap-4 lg:flex-row-reverse">
+        <Section id="home">
+          <div id="home_info" className="container flex flex-wrap justify-around items-center gap-4 lg:flex-row-reverse my-5">
             {/* Left div */}
             <div className="flex flex-col w-full lg:w-1/3 items-center gap-3 order-2 lg:order-1">
-              <h1 className="text-4xl text-start font-bold text-cat-maroon">Hi! I am Erlan Rangel</h1>
+              <Title>Hi! I am Erlan Rangel</Title>
               <p className="text-cat-text text-center text-xl leading-relaxed pt-4">
                 I am a <HighText>software developer</HighText> and an
                 <HighText> electronics engineer </HighText>with over
@@ -32,18 +33,23 @@ export default function Home() {
           </div>
         </Section>
 
-        {/* About */}
-        <Section id="projects" bgColor="bg-cat-base">
+        {/* Projects */}
+        <Section id="projects">
           <div className="flex flex-col items-center gap-5 w-9/12">
-            <h1 className="text-4xl text-start font-bold text-cat-maroon">Projects</h1>
+            <Title>Projects</Title>
+            {/* TODO: add project images */}
             <ProjectList />
           </div>
         </Section>
-        <Section id="about" bgColor="bg-cat-base">
-          <h1 className="text-cat-text text-4xl">About Me</h1>
+
+        {/* About */}
+        <Section id="about">
+          <Title>About me</Title>
         </Section>
-        <Section id="contact" bgColor="bg-cat-base">
-          <h1 className="text-cat-text text-4xl">Contact</h1>
+
+        {/* Contact */}
+        <Section id="contact">
+          <Title>Contact</Title>
         </Section>
       </div>
     </div>
