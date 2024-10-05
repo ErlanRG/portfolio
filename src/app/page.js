@@ -1,8 +1,9 @@
+import ExperienceList from './components/ExperienceList';
 import HighText from './components/HighlightedText';
 import Image from 'next/image';
 import ProjectList from './components/ProjectList';
-import SocialList from './components/SocialList';
 import Section from './components/Section';
+import SocialList from './components/SocialList';
 import Title from './components/Title';
 
 export default function Home() {
@@ -43,8 +44,11 @@ export default function Home() {
         </Section>
 
         {/* About */}
-        <Section id="about">
-          <Title>About me</Title>
+        <Section id="experience">
+          <div className="flex flex-col items-center justify-around gap-5 w-6/12">
+            <Title>Experience</Title>
+            <ExperienceList />
+          </div>
         </Section>
 
         {/* Contact */}

@@ -6,7 +6,7 @@ const Project = ({ img, title, description, href, details, skills }) => {
   const modalId = `modal-${title.replace(/\s+/g, '-').toLowerCase()}`;
 
   return (
-    <div className="border border-cat-text rounded-lg shadow-lg overflow-hidden w-full max-w-md mx-auto">
+    <div className="rounded-lg shadow-xl overflow-hidden w-full max-w-md mx-auto">
       <Image
         src={img}
         alt={title}
