@@ -34,6 +34,33 @@ export default function Home() {
           </div>
         </Section>
 
+        <Section id="about">
+          <div id="home_info" className="flex flex-col lg:flex-row items-center gap-5 w-9/12 justify-around">
+            {/* Imagen */}
+            <Image src="/images/20230926_232410_IMG_2453.jpg" width={460} height={460} className="rounded-5 order-1" alt="dev_image" />
+
+            {/* Texto */}
+            <div className="flex flex-col w-full lg:w-1/3 items-center gap-3 order-2">
+              <p className="text-cat-text text-center text-xl leading-relaxed">
+                Hi! I am Erlan Rangel and I like <HighText>tech!</HighText> I am primarily interested in developing
+                <HighText> desktop applications</HighText>, command line
+                interface tools <HighText>(CLI)</HighText>, text-based user
+                interfaces <HighText>(TUI)</HighText>, <HighText>backend</HighText>, and <HighText>embedded systems</HighText>,
+                with a specialization in <HighText>Linux</HighText> environments.
+              </p>
+              <p className="text-cat-text text-center text-xl leading-relaxed">
+                Although not my main focus, I also have experience with
+                <HighText> frontend</HighText>, and <HighText>web development </HighText>
+                using the most sought-after tools on the market.
+              </p>
+              <p className="text-cat-text text-center text-xl leading-relaxed">
+                Fast-forward to today, I have the privilege of working for a
+                company as a software developer.
+              </p>
+            </div>
+          </div>
+        </Section>
+
         {/* Projects */}
         <Section id="projects">
           <div className="flex flex-col items-center gap-5 w-9/12">

@@ -43,6 +43,7 @@ const Navbar = () => {
           <div className="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
             <ul className="nav navbar-nav nav-underline justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
               <NavLink onClick={smoothScroll} href="#home">Home</NavLink>
+              <NavLink onClick={smoothScroll} href="#about">About Me</NavLink>
               <NavLink onClick={smoothScroll} href="#projects">Projects</NavLink>
               <NavLink onClick={smoothScroll} href="#experience">Experience</NavLink>
             </ul>
