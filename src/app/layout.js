@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import BootstrapClient from "./components/BootstrapClient";
 import Navbar from "./components/Navbar";
 import { Ubuntu } from "next/font/google"
+import Footer from "./components/Footer";
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         {children}
         <BootstrapClient />
       </body>
+      <Footer />
     </html>
   );
 }
