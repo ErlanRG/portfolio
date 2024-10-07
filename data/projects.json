@@ -36,8 +36,8 @@
     "url": "https://github.com/ErlanRG/SICA",
     "details": "Academic project. This project use vanilla HTML, Javascript and CSS to create an asset management system for a fictional business",
     "skills": [
-      "HTML",
       "CSS",
+      "HTML",
       "Javascript"
     ]
   },
@@ -65,6 +65,19 @@
       "Lua",
       "Python",
       "Vim Script"
+    ]
+  },
+  {
+    "img": "/images/software_dev_vector.png",
+    "title": "Portfolio",
+    "description": "A curated collection of my work, showcasing skills, projects, and style.",
+    "url": "https://github.com/ErlanRG/portfolio",
+    "details": "This one not only contains a brief summary of my skills and projects, but also al ittb of my personal information and contact details.",
+    "skills": [
+      "Bootstrap",
+      "Javascript",
+      "NextJS",
+      "NodeJS"
     ]
   }
 ]
