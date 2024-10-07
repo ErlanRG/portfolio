@@ -1,14 +1,14 @@
 import "./globals.css";
-import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css';
 import BootstrapClient from "./components/BootstrapClient";
-import Navbar from "./components/Navbar";
-import { Ubuntu } from "next/font/google"
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import { Ubuntu } from "next/font/google";
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],
   weight: ["400", "700"],
-})
+});
 
 export const metadata = {
   title: "Erlan Rangel | Portfolio",
@@ -18,14 +18,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${ubuntu.className} antialiased`}
-      >
+      <body className={`${ubuntu.className} antialiased`}>
         <Navbar />
         {children}
         <BootstrapClient />
+        <Footer />
       </body>
-      <Footer />
     </html>
   );
 }
