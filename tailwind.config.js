@@ -19,6 +19,7 @@ module.exports = {
         'cat-teal': "#94e2d5",
         'cat-maroon': "#eba0ac",
         'cat-surface0': "#1e1e2e",
+        'cat-overlay0': "#6c7086",
       },
     },
   },
