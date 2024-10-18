@@ -20,13 +20,12 @@ export default function Home() {
               <Title>Hi! I am Erlan Rangel</Title>
               <Text className="pt-4">
                 I am a <HighText>software developer</HighText> and an
-                <HighText> electronics engineer</HighText> with over
-                <HighText> 7 years of experience</HighText> in the
-                semiconductor industry. I am passionate about technology,
-                especially the world of <HighText>Linux</HighText> and
-                <HighText> open-source software</HighText>. I am a quick learner
-                who adapts easily to different technologies and development
-                environments, always seeking new ways to innovate and improve.
+                <HighText> electronics engineer</HighText> with over <HighText>
+                  7 years of experience</HighText> in the semiconductor industry.
+                I am passionate about technology, especially the world of Linux
+                and open-source software. I am a quick learner who adapts
+                easily to different technologies and development environments,
+                always seeking new ways to innovate and improve.
               </Text>
               <Text className="py-2">Find me on social media or send me an email!</Text>
               <SocialList />
@@ -65,6 +64,7 @@ export default function Home() {
         <Section id="projects">
           <div className="flex flex-col items-center gap-5 w-9/12">
             <Title>Projects</Title>
+            <p>A quick overview of my projects including the technologies used.</p>
             <ProjectList />
           </div>
         </Section>
@@ -73,6 +73,7 @@ export default function Home() {
         <Section id="experience">
           <div className="flex flex-col items-center justify-around gap-5 w-6/12">
             <Title>Experience</Title>
+            <p>My profesional experience in the electronics and software development industry.</p>
             <ExperienceList />
           </div>
         </Section>
