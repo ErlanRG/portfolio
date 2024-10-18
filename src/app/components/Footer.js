@@ -23,6 +23,9 @@ const Footer = () => {
             height={45}
           />
         </div>
+        <div className="mb-4">
+          <p className="italic">"A byte of innovation at a time."</p>
+        </div>
         <nav className="flex space-x-4 mb-4">
           {links.map(({ href, label }) => (
             <a key={href} href={href} className="block px-2 transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-cat-teal">
