@@ -1,0 +1,22 @@
+[
+  {
+    "img": "/icons/github-142-svgrepo-com.png",
+    "url": "https://github.com/ErlanRG",
+    "alt": "GitHub"
+  },
+  {
+    "img": "/icons/gmail-svgrepo-com.png",
+    "url": "mailto:erlanrangel@gmail.com",
+    "alt": "Gmail"
+  },
+  {
+    "img": "/icons/linkedin-rounded-svgrepo-com.png",
+    "url": "https://linkedin.com/in/erlanrangel",
+    "alt": "LinkedIn"
+  },
+  {
+    "img": "/icons/mastodon-simple-svgrepo-com.png",
+    "url": "https://fosstodon.org/@tateyrg",
+    "alt": "Gmail"
+  }
+]

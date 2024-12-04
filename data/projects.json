@@ -1,0 +1,83 @@
+[
+  {
+    "img": "/images/proglogic_add_device.png",
+    "title": "Semiconductor Lifecycle Search Engine",
+    "description": "Device lifecycle manager and API with a search engine integrated",
+    "url": "https://github.com/ErlanRG/proglogicAPI",
+    "details": "This application was developed during my role as a Supply Line Engineer at Teradyne Costa Rica to reduce the time and increase accuracy when consulting the lifecycle information from specific components in the electronic design area. The application offers an API that expose some endpoints to feed a database with the lifecycle information, and a search engine to query that information",
+    "skills": [
+      "JUnit",
+      "JWT",
+      "Java",
+      "MariaDB",
+      "NextJS",
+      "Springboot",
+      "Typescript"
+    ]
+  },
+  {
+    "img": "/images/software_dev_vector.png",
+    "title": "Bluecpprint",
+    "description": "CLI utility to create a new C++ project with a predifined structure inspired by Melkeydev's go-blueprint",
+    "url": "https://github.com/ErlanRG/bluecpprint",
+    "details": "Inspired by Melkeydev, this project aims to make easier the creation of new C/C++ projects, making you to just go straight to the code and not to the project structure. The project is written in Golang and is available in my repo.",
+    "skills": [
+      "C",
+      "C++",
+      "CLI",
+      "Golang",
+      "Linux"
+    ]
+  },
+  {
+    "img": "/images/software_dev_vector.png",
+    "title": "SICA - Sistema de Control de Activos",
+    "description": "Basic asset management system for a small business",
+    "url": "https://github.com/ErlanRG/SICA",
+    "details": "Academic project. This project use vanilla HTML, Javascript and CSS to create an asset management system for a fictional business",
+    "skills": [
+      "CSS",
+      "HTML",
+      "Javascript"
+    ]
+  },
+  {
+    "img": "/images/software_dev_vector.png",
+    "title": "SIMEPCI - Sistema médico para pacientes y citas",
+    "description": "System to streamline patient management, medical records, and prescriptions across its various locations",
+    "url": "https://erangelg@dev.azure.com/erangelg/Grupo1/_git/Grupo1",
+    "details": "A medical system for patients and appointments is required, contracted by a fictional hospital, for the creation of the system called SIMEPCI (Medical System for Patients and Appointments). This private entity has multiple locations across the country and is interested in managing the control and follow-up of patients, medical records, and prescriptions in a centralized system.",
+    "skills": [
+      "ASP.NET Core",
+      "C#",
+      "Javascript",
+      "SCRUM"
+    ]
+  },
+  {
+    "img": "/images/software_dev_vector.png",
+    "title": "Dotfiles",
+    "description": "A collection configuration files for my Linux environment",
+    "url": "https://github.com/ErlanRG/.dotfiles",
+    "details": "A collection of configuration files for my Linux setup. This repository contains configurations for multiple tools and applications. It also contains a bash script to automate the setup process.",
+    "skills": [
+      "Bash",
+      "Lua",
+      "Python",
+      "Vim Script"
+    ]
+  },
+  {
+    "img": "/images/software_dev_vector.png",
+    "title": "Portfolio",
+    "description": "A curated collection of my work, showcasing skills, projects, and style.",
+    "url": "https://github.com/ErlanRG/portfolio",
+    "details": "This one not only contains a brief summary of my skills and projects, but also al ittb of my personal information and contact details.",
+    "skills": [
+      "Bootstrap",
+      "Javascript",
+      "NextJS",
+      "NodeJS"
+    ]
+  }
+]
